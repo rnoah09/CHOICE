@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">C.H.O.I.C.E.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">C.H.O.I.C.E.</string>
+    <string name="nav_header_subtitle">The Comprehensive, Helpful Option for Indecisive, Carefree Earthlings</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_tool_username">Username Generator</string>
+    <string name="menu_tool_rps">Rock Paper Scissors</string>
+    <string name="menu_tool_choice">Randomized Selection</string>
+    <string name="menu_decide_intro">Introduction</string>
+    <string name="menu_tool_number">Number Generator</string>
+</resources>
