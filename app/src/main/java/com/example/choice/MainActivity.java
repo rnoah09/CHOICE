@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tool_rps) {
             fragment = new RPSFragment();
         } else if (id == R.id.nav_tool_username) {
-
+            fragment = new UsernameFragment();
         }
 
         FragmentManager fm = getSupportFragmentManager();

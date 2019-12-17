@@ -46,32 +46,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textview_username_title" />
 
     <TextView
-        android:id="@+id/textview_username_adj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textAlignment="textEnd"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/textview_username_noun"
-        app:layout_constraintEnd_toStartOf="@id/textview_username_noun"
-        app:layout_constraintTop_toBottomOf="@id/textview_username_noun"
-        app:layout_constraintVertical_bias="0.571"
-        tools:text="Adj" />
-
-    <TextView
-        android:id="@+id/textview_username_noun"
+        android:id="@+id/textview_username_output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:textAlignment="textStart"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_username_adj"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_username_desc"
-        tools:text="Noun" />
+        app:layout_constraintVertical_bias="0.117"
+        tools:text="@string/menu_tool_username" />
 
     <EditText
         android:id="@+id/edittext_username_adj"
