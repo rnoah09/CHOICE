@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FragmentManager fm = getSupportFragmentManager();
+        fm.beginTransaction()
+                .replace(R.id.constraintlayout_main_container, new HomeFragment())
+                .commit();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -78,7 +84,7 @@ public class MainActivity extends AppCompatActivity
             fragment = new HomeFragment();
         } else if (id == R.id.nav_decide_intro) {
             fragment = new IntroductionFragment();
-        }else if (id == R.id.nav_decide_select) {
+        } else if (id == R.id.nav_decide_select) {
             fragment = new SelectionFragment();
         } else if (id == R.id.nav_tool_number) {
             fragment = new NumberFragment();

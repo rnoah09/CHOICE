@@ -35,11 +35,10 @@ public class HomeFragment extends Fragment {
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new IntroductionFragment();
-                FragmentManager manager = getFragmentManager();
-                manager.beginTransaction()
-                        .replace(R.id.container, fragment)
-                        .addToBackStack(null)
+
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                fm.beginTransaction()
+                        .replace(R.id.constraintlayout_main_container, new IntroductionFragment())
                         .commit();
             }
         });

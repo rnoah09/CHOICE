@@ -2,9 +2,12 @@ package com.example.choice;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -39,10 +42,21 @@ public class ChapterActivity extends AppCompatActivity {
             String text = readTextFile(XmlFileInputStream);
             textViewChapter.setText(text);
         }
+
+
     }
     public void wireWidgets(){
         textViewTitle = findViewById(R.id.textview_title_chapter);
         textViewChapter = findViewById(R.id.textview_text_chapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        Intent targetIntent = new Intent(ChapterActivity.this, MainActivity.class);
+        startActivity(targetIntent);
+        finish();
+
     }
 
     public String readTextFile(InputStream inputStream) {

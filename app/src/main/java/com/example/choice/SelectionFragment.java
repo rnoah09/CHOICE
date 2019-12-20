@@ -47,7 +47,6 @@ public class SelectionFragment extends Fragment {
                 // put a string extra with whatever the text of the current button is
                 targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
                 startActivity(targetIntent);
-                getActivity().finish();
             }
         });
         buttonChapter2.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +56,6 @@ public class SelectionFragment extends Fragment {
                 // put a string extra with whatever the text of the current button is
                 targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
                 startActivity(targetIntent);
-                getActivity().finish();
             }
         });
         buttonChapter3.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +65,6 @@ public class SelectionFragment extends Fragment {
                 // put a string extra with whatever the text of the current button is
                 targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
                 startActivity(targetIntent);
-                getActivity().finish();
             }
         });
     }

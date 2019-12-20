@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class IntroductionFragment extends Fragment {
 
@@ -32,6 +33,11 @@ public class IntroductionFragment extends Fragment {
         buttonSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                fm.beginTransaction()
+                        .replace(R.id.constraintlayout_main_container, new SelectionFragment())
+                        .commit();
 
             }
         });
