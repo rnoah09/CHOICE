@@ -12,5 +12,6 @@
     <string name="menu_tool_rps">Rock Paper Scissors</string>
     <string name="menu_tool_choice">Randomized Selection</string>
     <string name="menu_decide_intro">Introduction</string>
+    <string name="menu_decide_select">DE:CIDE Guide</string>
     <string name="menu_tool_number">Number Generator</string>
 </resources>

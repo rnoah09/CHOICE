@@ -10,37 +10,54 @@
             android:title="@string/menu_home" />
     </group>
 
-    <item android:title="DE:CIDE">
-        <menu>
-            <item
-                android:id="@+id/nav_decide_intro"
-                android:title="@string/menu_decide_intro" />
-        </menu>
-    </item>
+        <item android:title="DE:CIDE">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_decide_intro"
+                        android:title="@string/menu_decide_intro" />
+                </group>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_decide_select"
+                        android:title="@string/menu_decide_select" />
+                </group>
+            </menu>
+        </item>
 
-    <item android:title="Tools for the Indecisive">
-        <menu>
-            <item
-                android:id="@+id/nav_tool_number"
-                android:icon="@drawable/ic_casino_black_24dp"
-                android:title="@string/menu_tool_number"
-                />
-            <item
-                android:id="@+id/nav_tool_choice"
-                android:icon="@drawable/ic_format_list_bulleted_black_24dp"
-                android:title="@string/menu_tool_choice"
-                />
-            <item
-                android:id="@+id/nav_tool_rps"
-                android:icon="@drawable/ic_thumbs_up_down_black_24dp"
-                android:title="@string/menu_tool_rps"
-                />
-            <item
-                android:id="@+id/nav_tool_username"
-                android:icon="@drawable/ic_face_black_24dp"
-                android:title="@string/menu_tool_username"
-                />
-        </menu>
-    </item>
+    <group android:checkableBehavior="single">
+        <item android:title="Tools for the Indecisive">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_tool_number"
+                        android:icon="@drawable/ic_casino_black_24dp"
+                        android:title="@string/menu_tool_number"
+                        />
+                </group>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_tool_choice"
+                        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+                        android:title="@string/menu_tool_choice"
+                        />
+                </group>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_tool_rps"
+                        android:icon="@drawable/ic_thumbs_up_down_black_24dp"
+                        android:title="@string/menu_tool_rps"
+                        />
+                </group>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_tool_username"
+                        android:icon="@drawable/ic_face_black_24dp"
+                        android:title="@string/menu_tool_username"
+                        />
+                </group>
+            </menu>
+        </item>
+    </group>
 
 </menu>

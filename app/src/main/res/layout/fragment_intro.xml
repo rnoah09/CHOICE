@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DE:CIDE - Introduction"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_welcome_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_desc_intro"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:text="Through DE:CIDE, you will learn about several ways you can overcome your indecision to make decisions! The average human makes around 35,000 decisions every 24 hours, from small, inconsequential choices to large, impactful decisions. Not all of these choices are clear-cut, especially the important ones. Through this simple 3 chapter guide, you will have all the necessary knowledge to truly make the best of your information and options. "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_select_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_welcome_intro" />
+
+    <Button
+        android:id="@+id/button_select_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Chapter Selection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_desc_intro" />
+
+    <TextView
+        android:id="@+id/textview_welcome_intro"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:text="Hello, and welcome to Decision Education: Choose Instead of Delaying Everything!"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textview_desc_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_intro" />
+</androidx.constraintlayout.widget.ConstraintLayout>
