@@ -43,19 +43,31 @@ public class SelectionFragment extends Fragment {
         buttonChapter1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent targetIntent = new Intent(getActivity(), ChapterActivity.class);
+                // put a string extra with whatever the text of the current button is
+                targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
+                startActivity(targetIntent);
+                getActivity().finish();
             }
         });
         buttonChapter2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent targetIntent = new Intent(getActivity(), ChapterActivity.class);
+                // put a string extra with whatever the text of the current button is
+                targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
+                startActivity(targetIntent);
+                getActivity().finish();
             }
         });
         buttonChapter3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent targetIntent = new Intent(getActivity(), ChapterActivity.class);
+                // put a string extra with whatever the text of the current button is
+                targetIntent.putExtra(EXTRA_CHAPTER,((Button)v).getText().toString());
+                startActivity(targetIntent);
+                getActivity().finish();
             }
         });
     }

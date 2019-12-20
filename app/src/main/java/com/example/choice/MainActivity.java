@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity
             fragment = new HomeFragment();
         } else if (id == R.id.nav_decide_intro) {
             fragment = new IntroductionFragment();
+        }else if (id == R.id.nav_decide_select) {
+            fragment = new SelectionFragment();
         } else if (id == R.id.nav_tool_number) {
             fragment = new NumberFragment();
         } else if (id == R.id.nav_tool_choice) {
